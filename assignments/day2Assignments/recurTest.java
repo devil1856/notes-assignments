@@ -5,7 +5,6 @@ import java.util.Scanner;
 //Recursion
 //A function calling itself based on a set condition is called recursion
 public class recurTest {
-
     //sample of recursion code
     static int recur(int n){
         if(n<1) return 0;
