@@ -1,9 +1,11 @@
 package assignments;
 
+import java.util.Scanner;
+
 //Recursion
 //A function calling itself based on a set condition is called recursion
 public class recurTest {
-    
+
     //sample of recursion code
     static int recur(int n){
         if(n<1) return 0;
@@ -11,7 +13,9 @@ public class recurTest {
         else return recur(n/10);
     }
     public static void main(String[] args){
-        int out = recur(717);
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter the number you wish to check: ");
+        int out = recur(sc.nextInt());
         System.out.println(out);
     }
 }
